@@ -1,0 +1,8 @@
+---
+# handlers file for core_dependencies
+- name: restart core_dependencies
+  service:
+    name: "{{ core_dependencies_service }}"
+    state: restarted
+  when:
+    - ansible_virtualization_type != "docker"

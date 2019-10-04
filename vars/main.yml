@@ -1,0 +1,54 @@
+---
+# vars file for core_dependencies
+core_dependencies_shared_packages:
+  - bash
+  - acl
+  - tar
+  - gzip
+  - unzip
+  - git
+  - svn
+  - at
+  - shadow-utils
+
+_core_dependencies_packages:
+  Alpine: []
+  Archlinux: []
+  Debian:
+    - python3-apt
+    - debconf
+    - debconf-utils
+  CentOS-7:
+    - python3-pip
+    - python-virtualenv
+    - python3-setuptools
+    - python2-dnf
+    - yum
+    - dnf
+    - libselinux-python
+    - libsemanage-python
+  Red Hat Enterprise Linux-7:
+    - python3-pip
+    - python-virtualenv
+    - python3-setuptools
+    - python2-dnf
+    - yum
+    - dnf
+    - libselinux-python
+    - libsemanage-python
+  RedHat:
+    - python3-pip
+    - python3-virtualenv
+    - python3-setuptools
+    - python3-dnf
+    - dnf
+    - python3-libselinux
+    - python3-libsemanage
+  Suse: []
+
+core_dependencies_packages: "{{ _core_dependencies_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_packages[ansible_os_family] | default(_core_dependencies_packages['default'])) }}"
+
+core_dependencies_pip_packages:
+  - boto
+  - boto3
+  - boto

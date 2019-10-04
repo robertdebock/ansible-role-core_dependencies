@@ -1,0 +1,70 @@
+---
+dependency:
+  name: galaxy
+  options:
+    role-file: requirements.yml
+lint:
+  name: yamllint
+driver:
+  name: docker
+platforms:
+  - name: core-dependencies-alpine-edge
+    image: alpine:edge
+    pre_build_image: yes
+    command: sh -c "while true ; do sleep 1 ; done"
+  - name: core-dependencies-alpine-latest
+    image: alpine:latest
+    pre_build_image: yes
+    command: sh -c "while true ; do sleep 1 ; done"
+  - name: core-dependencies-archlinux
+    image: archlinux/base
+    pre_build_image: yes
+  - name: core-dependencies-centos-6
+    image: centos:6
+    pre_build_image: yes
+  - name: core-dependencies-centos-latest
+    image: centos:latest
+    pre_build_image: yes
+  - name: core-dependencies-debian-stable
+    image: debian:stable
+    pre_build_image: yes
+  - name: core-dependencies-debian-unstable
+    image: debian:unstable
+    pre_build_image: yes
+  - name: core-dependencies-fedora-latest
+    image: fedora:latest
+    pre_build_image: yes
+  - name: core-dependencies-fedora-rawhide
+    image: fedora:rawhide
+    pre_build_image: yes
+  - name: core-dependencies-opensuse-leap
+    image: opensuse/leap
+    pre_build_image: yes
+  - name: core-dependencies-ubuntu-latest
+    image: ubuntu:latest
+    pre_build_image: yes
+  - name: core-dependencies-ubuntu-rolling
+    image: ubuntu:rolling
+    pre_build_image: yes
+  - name: core-dependencies-ubuntu-devel
+    image: ubuntu:devel
+    pre_build_image: yes
+provisioner:
+  name: ansible
+  playbooks:
+    prepare: ../resources/prepare.yml
+    converge: ../resources/playbook.yml
+  inventory:
+    host_vars:
+      core-dependencies-archlinux:
+        ansible_python_interpreter: /usr/bin/python3
+      core-dependencies-fedora-latest:
+        ansible_python_interpreter: /usr/bin/python3
+      core-dependencies-fedora-rawhide:
+        ansible_python_interpreter: /usr/bin/python3
+  config_options:
+    defaults:
+      stdout_callback: yaml
+      bin_ansible_callbacks: true
+scenario:
+  name: default

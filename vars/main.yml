@@ -55,14 +55,12 @@ _core_dependencies_packages:
     - shadow-utils
     - svn
   Suse:
-    - python3-dnf
-    - python3-libselinux
-    - python3-libsemanage
-    - python3-pip
-    - python3-setuptools
-    - python3-virtualenv
-    - shadow-utils
-    - svn
+    - libselinux1
+    - python-selinux
+    - python-pip
+    - python-setuptools
+    - shadow
+    - subversion
 
 core_dependencies_packages: "{{ _core_dependencies_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_packages[ansible_os_family] | default(_core_dependencies_packages['default'])) }}"
 

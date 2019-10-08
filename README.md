@@ -6,8 +6,8 @@ core_dependencies
 
 Install dependecies to support the Ansible core modules.
 
-<img src="https://img.shields.io/ansible/role/d/"/>
-<img src="https://img.shields.io/ansible/quality/"/>
+<img src="https://img.shields.io/ansible/role/d/43778"/>
+<img src="https://img.shields.io/ansible/quality/43778"/>
 
 Example Playbook
 ----------------
@@ -64,9 +64,7 @@ The following roles can be installed to ensure all requirements are met, using `
 This role uses the following modules:
 ```yaml
 ---
-- debug
 - package
-- pip
 - service
 ```
 

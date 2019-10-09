@@ -18,7 +18,7 @@
         name: "{{ core_dependencies_pip_packages }}"
         state: present
       register: core_dependencies_install_pip_packages
-      until: core_dependencies_install_pip_packages
+      until: core_dependencies_install_pip_packages is succeeded
       retries: 3
   rescue:
     - name: gracefully finish

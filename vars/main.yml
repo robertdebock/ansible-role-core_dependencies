@@ -3,7 +3,7 @@
 core_dependencies_shared_packages:
   - acl
   - at
-  - bzip
+  - bzip2
   - bash
   - git
   - gzip

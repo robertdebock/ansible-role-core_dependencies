@@ -9,21 +9,23 @@ core_dependencies_shared_packages:
   - gzip
   - tar
   - unzip
-  - xz
 
 _core_dependencies_packages:
   Alpine:
     - shadow
     - subversion
+    - xz
   Archlinux:
     - shadow
     - subversion
+    - xz
   Debian:
     - debconf
     - debconf-utils
     - passwd
     - python3-apt
     - subversion
+    - xz-utils
   CentOS-7:
     - libselinux-python
     - libsemanage-python
@@ -33,6 +35,7 @@ _core_dependencies_packages:
     - python3-setuptools
     - shadow-utils
     - svn
+    - xz
     - yum
   Red Hat Enterprise Linux-7:
     - libselinux-python
@@ -43,6 +46,7 @@ _core_dependencies_packages:
     - python3-setuptools
     - shadow-utils
     - svn
+    - xz
     - yum
   RedHat:
     - dnf
@@ -54,6 +58,7 @@ _core_dependencies_packages:
     - python3-virtualenv
     - shadow-utils
     - svn
+    - xz
   Suse:
     - libselinux1
     - python-pip
@@ -61,6 +66,7 @@ _core_dependencies_packages:
     - python-setuptools
     - shadow
     - subversion
+    - xz
 
 core_dependencies_packages: "{{ _core_dependencies_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_packages[ansible_os_family] | default(_core_dependencies_packages['default'])) }}"
 

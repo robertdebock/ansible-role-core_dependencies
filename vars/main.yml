@@ -57,7 +57,7 @@ _core_dependencies_packages:
     - python3-setuptools
     - python3-virtualenv
     - shadow-utils
-    - svn
+    - subversion
     - xz
   Suse:
     - libselinux1

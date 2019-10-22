@@ -20,6 +20,7 @@
       register: core_dependencies_install_pip_packages
       until: core_dependencies_install_pip_packages is succeeded
       retries: 3
+      failed_when: no
   rescue:
     - name: gracefully finish
       debug:

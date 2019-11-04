@@ -12,21 +12,25 @@ core_dependencies_shared_packages:
 
 _core_dependencies_packages:
   Alpine:
+    - iproute2
     - shadow
     - subversion
     - xz
   Archlinux:
+    - iproute2
     - shadow
     - subversion
     - xz
   Debian:
     - debconf
     - debconf-utils
+    - iproute2
     - passwd
     - python3-apt
     - subversion
     - xz-utils
   RedHat-7:
+    - iproute
     - libselinux-python
     - libsemanage-python
     - shadow-utils
@@ -34,6 +38,7 @@ _core_dependencies_packages:
     - yum
   RedHat:
     - dnf
+    - iproute
     - python3-dnf
     - python3-libselinux
     - python3-libsemanage
@@ -43,6 +48,7 @@ _core_dependencies_packages:
     - shadow-utils
     - xz
   Suse:
+    - iproute2
     - libselinux1
     - python-pip
     - python-selinux

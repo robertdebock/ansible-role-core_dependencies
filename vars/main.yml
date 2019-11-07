@@ -16,6 +16,12 @@ _core_dependencies_packages:
     - shadow
     - subversion
     - xz
+  Amazon:
+    - iproute
+    - python3-pip
+    - python3-setuptools
+    - shadow-utils
+    - xz
   Archlinux:
     - iproute2
     - shadow
@@ -57,7 +63,8 @@ _core_dependencies_packages:
     - subversion
     - xz
 
-core_dependencies_packages: "{{ _core_dependencies_packages[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_packages[ansible_os_family] | default(_core_dependencies_packages['default'])) }}"
+# core_dependencies_packages: "{{ _core_dependencies_packages[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_packages[ansible_os_family] | default(_core_dependencies_packages['default'])) }}"
+core_dependencies_packages: "{{ _core_dependencies_packages[ansible_distribution] | default(_core_dependencies_packages[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_packages[ansible_os_family] | default(_core_dependencies_packages['default']))) }}"
 
 core_dependencies_pip_packages:
   - boto

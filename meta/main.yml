@@ -37,7 +37,6 @@ galaxy_info:
 
   galaxy_tags:
     - coredependencies
-    - alpine
     - archlinux
     - centos
     - debian

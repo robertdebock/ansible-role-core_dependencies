@@ -4,6 +4,8 @@ core_dependencies
 <img src="https://docs.ansible.com/ansible-tower/3.2.4/html_ja/installandreference/_static/images/logo_invert.png" width="10%" height="10%" alt="Ansible logo" align="right"/>
 <a href="https://travis-ci.org/robertdebock/ansible-role-core_dependencies"> <img src="https://travis-ci.org/robertdebock/ansible-role-core_dependencies.svg?branch=master" alt="Build status"/></a> <img src="https://img.shields.io/ansible/role/d/43778"/> <img src="https://img.shields.io/ansible/quality/43778"/>
 
+<a href="https://github.com/robertdebock/ansible-role-core_dependencies/actions"><img src="https://github.com/robertdebock/ansible-role-core_dependencies/workflows/GitHub%20Action/badge.svg"/></a>
+
 Install dependecies to support the Ansible core modules.
 
 Example Playbook

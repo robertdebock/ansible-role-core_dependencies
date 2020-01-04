@@ -28,11 +28,6 @@ _core_dependencies_packages:
     - python3-setuptools
     - shadow-utils
     - xz
-  Archlinux:
-    - iproute2
-    - shadow
-    - subversion
-    - xz
   Debian:
     - debconf
     - debconf-utils

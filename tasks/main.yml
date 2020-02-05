@@ -4,7 +4,7 @@
   package:
     name: "{{ item }}"
     state: present
-  with_items:
+  loop:
     - "{{ core_dependencies_shared_packages }}"
     - "{{ core_dependencies_packages }}"
   register: core_dependencies_install_packages

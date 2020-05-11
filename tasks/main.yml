@@ -2,11 +2,8 @@
 # tasks file for core_dependencies
 - name: install packages
   package:
-    name: "{{ item }}"
+    name: "{{ core_dependencies_shared_packages + core_dependencies_packages }}"
     state: present
-  loop:
-    - "{{ core_dependencies_shared_packages }}"
-    - "{{ core_dependencies_packages }}"
   register: core_dependencies_install_packages
   until: core_dependencies_install_packages is succeeded
   retries: 3

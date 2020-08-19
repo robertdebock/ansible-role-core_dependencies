@@ -15,13 +15,13 @@ Here is how you can help, a lot of steps are related to GitHub, not specifically
 
 ### [1. Make an issue.](#1-make-an-issue)
 
-When you spot an issue, [create an issue](https://github.com/robertdebock/core_dependencies/issues).
+When you spot an issue, [create an issue](https://github.com/robertdebock/ansible-role-core_dependencies/issues).
 
 Making the issue help me and others to find similar problems in the future.
 
 ### [2. Fork the project.](#2-fork-the-project)
 
-On the top right side of [the repository on GitHub](https://github.com/robertdebock/core_dependencies), click `fork`. This copies everything to your GitHub namespace.
+On the top right side of [the repository on GitHub](https://github.com/robertdebock/ansible-role-core_dependencies), click `fork`. This copies everything to your GitHub namespace.
 
 ### [3. Make the changes](#3-make-the-changes)
 
@@ -30,7 +30,7 @@ In you own GitHub namespace, make the required changes.
 I typically do that by cloning the repository (in your namespace) locally:
 
 ```
-git clone git@github.com:YOURNAMESPACE/core_dependencies.git
+git clone git@github.com:YOURNAMESPACE/ansible-role-core_dependencies.git
 ```
 
 Now you can start to edit on your laptop.

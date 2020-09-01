@@ -4,6 +4,9 @@
 #
 language: python
 
+os: linux
+dist: xenial
+
 python:
   - "3.8"
 
@@ -13,7 +16,7 @@ services:
 env:
   global:
     namespace="robertdebock"
-  matrix:
+  jobs:
     - image="alpine" tag="latest"
     - image="alpine" tag="edge"
     - image="amazonlinux" tag="1"
@@ -40,5 +43,8 @@ script:
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
-  slack: "bojCqM9nn3Gcp4CsPSAZVMgKFc0N3W94MYO71tJHX8A/FOMz0S4Lka/yhwf1vy9L595BONiVrV5ZlpbLH8Bze31yKzNXx5K7jQ6xIHOFjQuE/ifueIJsaJdRN1EQr+brWKyy3CaGkgx0OANr9h7svJ3mX22ahb3AgH39we55jM3BpXraVvVVkmrhkphAos7zw+zH2DIK9FOb0oH7/VksjMUzX3DQWiDS2/7C1oC65VnkLJu7hWQ2LAVwP7z62RVG9iIp9K2e50oVzdWSOJtfu1zCAD6aj0hHLWmmHKBloulaOUbXvrMGPNFRCsMumvKF1RwXWFI4CDRJBszZqNBIDOxOaoEfPzTnxr9606JfDsHNHQiwyHTQ6BpbwFopuA0jf3yv25TjgFy44bETkaHv0ymgs/BZ2bTzHAq28f4Ef5giCu6gUaSobELgblt7++hfb7Pjp7T6q+j/kIXkirv7TNGKvPc1+Lk83oSDbjemxXNMYucK9z0m0x+v8M5lkQEft97LXwtjPrFjVWn7TX56HLMZHyh2uX/soCkkI1RcT1ad3qhSzNuWykno1ap2MIlJ1Y2xPJnAS2DB3Ew/vuFkgu92gETX0ZP1rzcJEhCOinpGUuBHczwNaP7D0mNrW6DLTErxQQ3G34JF2dB38IPMgZrtF5Hj6uTN96pcZ5dj2W8="
+  slack:
+    secure: "N7ZeU84McxPX9xRgE1ED97GTjNxRNn21uSf3elLOjzf2J4z+f3/n6eH7pozXr9N4B+tTedSdIiQDQNKm91pXVp1i5uc2DLKXbe80zHsmBlUN3PQocfnaYQJ0N6P8xfrvqikibUqruUnOq1ctQvop26puPRSZRkXlZv9lUfC0rnPciXDHly5P2zLG+Pd0Ju+aEAxoDnQ5LK6d+5wBb+q1ZPoc89EEvCo5SJbo6u8rqVsroJrIqFJaP7PoAOY22nBYHjwZ5RUEAhQDMLELUcjifVl/8oj+SPvFdiYNy767zZ600AyeErH3Ec9B9skhLh10tXPKNconJ2/1n+7y2smqPeXdLnF7M6PxkpVgeYy8VPWIRjIKRbjnwA6Lpbg6JgSIqIlXo5pHVqDo+4ZUrmpNPlQMoCm2OB8kvalpDDXf2N0+tNprKeZ7nO6rEjMXAHkZz8bBE/2TAB3fMMkHHD6jRknTPL9MxUPm9c0oUDDNHpB1rIlz0+hq3w8k3EmYsijcJ4CkLb5ueEY2wSqnYVqBnq1b5qEboTVeoyFf85h5ZVQKwDPo/xyixHGWpgn+1iipu7Co632x7L8sNvhbDcRSGpWBKkLYP+YzqI3zpbZznxIfC/UabS2fnv7ZfDBzlK5DArw8Ay6gbjPfFXtCH9KdbSKS6UImlz/nscYb9sOjs9c="
+    on_success: change
+    template: "%{result}: %{repository_slug}@%{branch}, build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>)"
   email: false

@@ -1,0 +1,4 @@
+---
+# handlers file for core_dependencies
+- name: gather facts
+  setup:

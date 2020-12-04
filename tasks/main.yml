@@ -1,5 +1,6 @@
 ---
 # tasks file for core_dependencies
+
 - name: install packages
   package:
     name: "{{ core_dependencies_shared_packages + core_dependencies_packages }}"

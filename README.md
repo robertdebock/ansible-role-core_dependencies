@@ -2,9 +2,9 @@
 
 Install dependecies to support the Ansible core modules.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-core_dependencies.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-core_dependencies)|[![github](https://github.com/robertdebock/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-core_dependencies/actions)|[![quality](https://img.shields.io/ansible/quality/43778)](https://galaxy.ansible.com/robertdebock/core_dependencies)|[![downloads](https://img.shields.io/ansible/role/d/43778)](https://galaxy.ansible.com/robertdebock/core_dependencies)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-core_dependencies.svg)](https://github.com/robertdebock/ansible-role-core_dependencies/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-core_dependencies.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-core_dependencies)|[![github](https://github.com/robertdebock/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-core_dependencies/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-core_dependencies)|[![quality](https://img.shields.io/ansible/quality/43778)](https://galaxy.ansible.com/robertdebock/core_dependencies)|[![downloads](https://img.shields.io/ansible/role/d/43778)](https://galaxy.ansible.com/robertdebock/core_dependencies)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-core_dependencies.svg)](https://github.com/robertdebock/ansible-role-core_dependencies/releases/)|
 
 ## [Example Playbook](#example-playbook)
 

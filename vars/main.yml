@@ -68,6 +68,8 @@ _core_dependencies_packages:
 
 core_dependencies_packages: "{{ _core_dependencies_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version ] | default(_core_dependencies_packages[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_packages[ansible_os_family] | default(_core_dependencies_packages['default']))) }}"
 
+core_dependencies: "{{ core_dependencies_shared_packages + core_dependencies_packages }}"
+
 core_dependencies_pip_packages:
   - boto
   - boto3

@@ -2,14 +2,14 @@
 # tasks file for core_dependencies
 
 - name: install packages
-  package:
+  ansible.builtin.package:
     name: "{{ core_dependencies }}"
     state: present
   notify:
     - gather facts
 
 - name: try to install pip packages
-  pip:
+  ansible.builtin.pip:
     name: "{{ core_dependencies_pip_packages }}"
     state: present
   failed_when: no
@@ -17,4 +17,4 @@
     - gather facts
 
 - name: flush handlers
-  meta: flush_handlers
+  ansible.builtin.meta: flush_handlers

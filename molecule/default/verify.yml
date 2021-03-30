@@ -11,6 +11,6 @@
         dest: tmp.tgz
 
     - name: check network facts
-      assert:
+      ansible.builtin.assert:
         that:
           - ansible_default_ipv4.broadcast is defined

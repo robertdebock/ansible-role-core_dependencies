@@ -6,7 +6,7 @@
 
   tasks:
     - name: compress /tmp
-      archive:
+      community.general.archive:
         path: /tmp
         dest: tmp.tgz
 

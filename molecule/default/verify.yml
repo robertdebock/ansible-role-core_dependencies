@@ -14,3 +14,15 @@
       ansible.builtin.assert:
         that:
           - ansible_default_ipv4.broadcast is defined
+
+    - name: see if the package manager still works
+      block:
+        - name: install nginx
+          package:
+            name: nginx
+            state: present
+
+        - name: uninstall nginx
+          package:
+            name: nginx
+            state: absent

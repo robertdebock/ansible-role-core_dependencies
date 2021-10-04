@@ -17,12 +17,6 @@
 
     - name: see if the package manager still works
       block:
-        - name: install nginx
-          package:
-            name: nginx
-            state: present
-
-        - name: uninstall nginx
-          package:
-            name: nginx
-            state: absent
+        - name: install a package
+          ansible.builtin.package:
+            name: acl

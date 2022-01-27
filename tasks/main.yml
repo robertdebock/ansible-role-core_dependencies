@@ -9,8 +9,8 @@
   notify:
     - gather facts
 
-- name: flush handlers
-  ansible.builtin.meta: flush_handlers
+- name: reset connetion
+  ansible.builtin.meta: reset_connection
 
 - name: try to install pip packages
   ansible.builtin.pip:
@@ -19,3 +19,6 @@
   failed_when: no
   notify:
     - gather facts
+
+- name: flush handlers
+  ansible.builtin.meta: flush_handlers

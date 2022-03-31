@@ -49,6 +49,14 @@ _core_dependencies_packages:
     - python3-libsemanage
     - shadow-utils
     - xz
+  Rocky:
+    - dnf
+    - iproute
+    - python3-dnf
+    - python3-libselinux
+    - python3-libsemanage
+    - shadow-utils
+    - xz
   Suse:
     - iproute2
     - libselinux1

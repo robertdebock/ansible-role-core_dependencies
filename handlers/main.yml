@@ -1,5 +1,8 @@
 ---
 # handlers file for core_dependencies
 
+- name: Reset connection
+  ansible.builtin.meta: reset_connection
+
 - name: Gather facts
   ansible.builtin.setup:

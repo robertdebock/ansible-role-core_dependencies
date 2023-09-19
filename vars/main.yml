@@ -67,4 +67,4 @@ _core_dependencies_specific_packages:
 
 core_dependencies_specific_packages: "{{ _core_dependencies_specific_packages[ansible_distribution ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_specific_packages[ansible_os_family ~ '-' ~ ansible_distribution_major_version] | default(_core_dependencies_specific_packages[ansible_os_family] )) }}"
 
-core_dependencies_packages: "{{ core_dependencies_shared_packages + _core_dependencies_specific_packages }}"
+core_dependencies_packages: "{{ core_dependencies_shared_packages + core_dependencies_specific_packages }}"

@@ -2,9 +2,9 @@
 
 Install dependecies to support the Ansible core modules.
 
-|GitHub|GitLab|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-core_dependencies/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-core_dependencies)|[![quality](https://img.shields.io/ansible/quality/43778)](https://galaxy.ansible.com/robertdebock/core_dependencies)|[![downloads](https://img.shields.io/ansible/role/d/43778)](https://galaxy.ansible.com/robertdebock/core_dependencies)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-core_dependencies.svg)](https://github.com/robertdebock/ansible-role-core_dependencies/releases/)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/robertdebock/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-core_dependencies/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-core_dependencies)|[![downloads](https://img.shields.io/ansible/role/d/24467)](https://galaxy.ansible.com/robertdebock/core_dependencies)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-core_dependencies.svg)](https://github.com/robertdebock/ansible-role-core_dependencies/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -76,7 +76,7 @@ The minimum version of Ansible required is 2.12, tests have been done to:
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-core_dependencies/issues)
+If you find issues, please register them in [GitHub](https://github.com/robertdebock/ansible-role-core_dependencies/issues).
 
 ## [License](#license)
 

@@ -1,4 +1,4 @@
-# Ansible role [core_dependencies](#core_dependencies)
+# [Ansible role core_dependencies](#core_dependencies)
 
 Install dependecies to support the Ansible core modules.
 

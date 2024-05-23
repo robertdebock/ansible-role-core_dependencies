@@ -1,22 +1,22 @@
 ---
 - name: Verify
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   tasks:
-    - name: compress /tmp
+    - name: Compress /tmp
       community.general.archive:
         path: /tmp
         dest: tmp.tgz
 
-    - name: check network facts
+    - name: Check network facts
       ansible.builtin.assert:
         that:
           - ansible_default_ipv4.broadcast is defined
 
-    - name: see if the package manager still works
+    - name: See if the package manager still works
       block:
-        - name: install a package
+        - name: Install a package
           ansible.builtin.package:
             name: acl

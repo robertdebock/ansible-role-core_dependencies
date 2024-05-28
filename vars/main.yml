@@ -42,6 +42,14 @@ _core_dependencies_specific_packages:
     - python3-apt
     - subversion
     - xz-utils
+  Fedora-41:
+    - dnf
+    - iproute
+    - python3-libdnf5
+    - python3-libselinux
+    - python3-libsemanage
+    - shadow-utils
+    - xz
   RedHat-7:
     - iproute
     - libselinux-python

@@ -9,11 +9,13 @@
       community.general.archive:
         path: /tmp
         dest: tmp.tgz
+        mode: '0644'
 
     - name: Check network facts
       ansible.builtin.assert:
         that:
           - ansible_default_ipv4.broadcast is defined
+        quiet: true
 
     - name: See if the package manager still works
       block:

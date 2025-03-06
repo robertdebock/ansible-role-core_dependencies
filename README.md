@@ -18,7 +18,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   gather_facts: true
 
   roles:
-    - role: ansible-role-core_dependencies
+    - role: robertdebock.core_dependencies
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-core_dependencies/blob/master/molecule/default/prepare.yml):

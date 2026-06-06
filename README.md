@@ -1,6 +1,6 @@
 # [Ansible role core_dependencies](#ansible-role-core_dependencies)
 
-Install dependecies to support the Ansible core modules.
+Install dependencies to support the Ansible core modules.
 
 |GitHub|GitLab|Downloads|Version|
 |------|------|---------|-------|

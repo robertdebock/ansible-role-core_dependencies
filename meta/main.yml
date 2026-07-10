@@ -2,7 +2,7 @@
 galaxy_info:
   author: robertdebock
   role_name: core_dependencies
-  description: Install dependecies to support the Ansible core modules.
+  description: Install dependencies to support the Ansible core modules.
   license: Apache-2.0
   company: none
   min_ansible_version: "2.12"
